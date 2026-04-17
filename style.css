@@ -1,0 +1,273 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.container,
+.comparison-section {
+  scroll-snap-align: start;
+}
+
+/* Fundo */
+body {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+
+/* Container (tela inicial) */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Dias */
+.days {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Tempo */
+.time {
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
+  color: #94a3b8;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.years {
+  font-size: 0.5em;
+  color: #94a3b8;
+  opacity: 0.6;
+  margin-left: 6px;
+}
+
+/* Label */
+.label {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Ajuste mobile pequeno */
+@media (max-width: 350px) {
+  .days {
+    font-size: 2rem;
+  }
+}
+
+/* Fundo estrelas */
+#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Frases */
+.quote-container {
+  margin-top: 30px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.message {
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
+  color: #94a3b8;
+  line-height: 1.6;
+  opacity: 0.85;
+  transition: opacity 0.5s ease;
+}
+
+.author {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  opacity: 0.6;
+  letter-spacing: 1px;
+  transition: opacity 0.5s ease;
+}
+
+/* Animação contador */
+.fade-update {
+  animation: fadeUpdate 0.4s ease;
+}
+
+@keyframes fadeUpdate {
+  0% {
+    opacity: 0.5;
+    transform: translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Seções de comparação */
+.comparison-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.comp-title {
+  font-size: 1,2rem;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.comp-main {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: #e2e8f0;
+  margin-bottom: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comp-sub {
+  font-size: 1rem;
+  color: #94a3b8;
+  opacity: 0.8;
+}
+
+/* Reveal scroll */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================= */
+/* 💔 TELA FINAL (IMPACTO) */
+/* ========================= */
+
+/* Texto principal */
+
+.final-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Caixa central */
+.final-box {
+  padding: 30px 25px;
+  border-radius: 16px;
+
+ background: rgba(255, 255, 255, 0.015);
+
+  box-shadow:
+    0 0 40px rgba(255, 255, 255, 0.03),
+    0 0 10px rgba(255, 255, 255, 0.02);
+
+  backdrop-filter: blur(6px);
+
+  max-width: 500px;
+  width: 100%;
+}
+
+.final-box .comp-main {
+  text-align: center;
+}
+
+.final-box .comp-sub {
+  text-align: center;
+}
+
+.final-section .comp-main {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* Container das linhas */
+.final-section .comp-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Linhas individuais */
+.final-section .line {
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  font-weight: 500;
+  color: #e2e8f0;
+
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Linha final (impacto máximo) */
+.final-section .highlight {
+  font-weight: 700;
+  font-size: clamp(1.3rem, 6vw, 2.5rem);
+  color: #ffffff;
+}
+
+/* Animação em sequência */
+.final-section.show .line:nth-child(1) {
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.final-section.show .line:nth-child(2) {
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+/* Animação base */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.final-love {
+  margin-top: 15px;
+  font-size: clamp(1.3rem, 5vw, 2.1rem);
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.final-section.show .line:nth-child(3) {
+  animation: fadeUp 1s ease forwards;
+  animation-delay: 2.5s;
+}
+
+.rubi{
+  color: #9B111E;
+}

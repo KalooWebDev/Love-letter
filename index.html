@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Um sinal de tempo e amor</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖤</text></svg>">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS das frases -->
+  <link rel="stylesheet" href="frases.css">
+</head>
+
+<body>
+
+  <!-- Fundo -->
+  <canvas id="stars"></canvas>
+
+  <!-- SEÇÃO 1: CONTADOR -->
+  <section class="container">
+    
+    <p class="label">estamos juntos há:</p>
+
+    <h1 class="days"></h1>
+    <p class="time"></p>
+
+    <div class="quote-container">
+      <p class="message"></p>
+      <p class="author"></p>
+    </div>
+
+  </section>
+
+  <!-- SEÇÃO 2+: COMPARAÇÕES -->
+  <div id="comparisons"></div>
+
+  <!-- Scripts -->
+  <script src="canvas.js"></script>
+  <script src="timer.js"></script>
+  <script src="messages.js"></script>
+  <script src="comparisons.js"></script>
+  <script src="reveal.js"></script>
+
+</body>
+</html>
