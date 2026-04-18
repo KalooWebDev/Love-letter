@@ -21,37 +21,31 @@ function generateComparisons() {
 
   return [
     {
+      title: `Em ${months} meses...`,
+      main: `O mundo já mudou de estação ${seasons} vezes`,
+      sub: `e em todas elas nós ficamos juntos.`
+    },
+    {
+      title: `Em ${days} dias...`,
+      main: `O meu coração já bateu mais de ${heartbeats.toLocaleString()} vezes`,
+      sub: `e cada uma delas foi para você.`
+    },
+    {
+      title: `Em ${years.toFixed(1)} anos...`,
+      main: `O tempo continuou seguindo, como sempre faz`,
+      sub: `mas o que eu sinto por você nunca mudou.`
+    },
+    {
       title: `em ${days} dias...`,
-      main: `a Lua já completou cerca de ${moonCycles} ciclos`,
-      sub: `ela está sempre voltando, como eu volto para o seus braços`
+      main: `A Lua já passou por cerca de ${Math.floor(days / 29.5)} fases`,
+      sub: `Ela sempre muda, mas nunca perde o brilho, assim como você.`
     },
     {
-      title: `em ${months} meses...`,
-      main: `o mundo já mudou de estação ${seasons} vezes`,
-      sub: `e em todas elas nós ficamos juntos`
-    },
-    {
-      title: `em ${days} dias...`,
-      main: `o meu coração já bateu mais de ${heartbeats.toLocaleString()} vezes`,
-      sub: `e cada uma delas foi para você`
-    },
-    {
-      title: `em ${years.toFixed(1)} anos...`,
-      main: `o tempo continuou seguindo, como sempre faz`,
-      sub: `mas o que eu sinto por você nunca mudou`
-    },
-    {
-      title: `em ${months} meses...`,
-      main: `tantas coisas poderiam ter mudado`,
-      sub: `mas ainda é você quem eu quero ao meu lado e sempre vou querer`
-    },
-
-   {
   main: "",
   sub: `
-    <span class="line">a melhor parte do meu tempo</span>
-    <span class="line highlight">É com você</span>
-    <span class="line highlight final-love">eu te amo, <span class="rubi">Rubi</span> e vou continuar te amando para todo sempre</span>
+    <span class="line">Esse site é eterno, assim como o meu amor por você</span>
+    <span class="line highlight">Enquanto eu existir, ele vai existir</span>
+    <span class="line highlight final-love">eu te amo <span class="rubi">Rubi</span> e vou continuar te amando para todo sempre</span>
   `
 }
   ];
@@ -76,7 +70,7 @@ function renderComparisons() {
     section.innerHTML = `
   <div class="final-box">
     ${item.title ? `<p class="comp-title">${item.title}</p>` : ""}
-    <h2 class="comp-main">${item.main}</h2>
+    <p class="comp-title">${item.main}</p>
     <p class="comp-sub">${item.sub}</p>
   </div>
 `;

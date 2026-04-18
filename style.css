@@ -134,12 +134,14 @@ body {
   justify-content: center;
   text-align: center;
   padding: 20px;
+    align-items: center; /* 👈 FALTAVA ISSO */
 }
 
 .comp-title {
-  font-size: 1,2rem;
-  color: #94a3b8;
+  font-size: 1.5rem;
+  color: #ffffff;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .comp-main {
@@ -152,7 +154,7 @@ body {
 }
 
 .comp-sub {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #94a3b8;
   opacity: 0.8;
 }
@@ -183,14 +185,14 @@ body {
 
 /* Caixa central */
 .final-box {
-  padding: 30px 25px;
-  border-radius: 16px;
+  padding: 25px 20px;
+  border-radius: 15px;
 
- background: rgba(255, 255, 255, 0.015);
+  background: rgba(255, 255, 255, 0.01);
 
   box-shadow:
-    0 0 40px rgba(255, 255, 255, 0.03),
-    0 0 10px rgba(255, 255, 255, 0.02);
+    0 0 20px rgba(255, 255, 255, 0.015),
+    0 0 5px rgba(255, 255, 255, 0.01);
 
   backdrop-filter: blur(6px);
 
@@ -207,7 +209,7 @@ body {
 }
 
 .final-section .comp-main {
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 300;
   margin-bottom: 30px;
 }
@@ -221,10 +223,9 @@ body {
 
 /* Linhas individuais */
 .final-section .line {
-  font-size: clamp(1.5rem, 5vw, 2.2rem);
-  font-weight: 500;
+    font-size: clamp(1rem, 3.5vw, 1.4rem);
+    font-weight: 500;
   color: #e2e8f0;
-
   opacity: 0;
   transform: translateY(20px);
 }
@@ -232,7 +233,7 @@ body {
 /* Linha final (impacto máximo) */
 .final-section .highlight {
   font-weight: 700;
-  font-size: clamp(1.3rem, 6vw, 2.5rem);
+    font-size: clamp(1rem, 4vw, 1.6rem);
   color: #ffffff;
 }
 
@@ -240,6 +241,7 @@ body {
 .final-section.show .line:nth-child(1) {
   animation: fadeUp 1s ease forwards;
   animation-delay: 0.5s;
+  margin-top: 0px;
 }
 
 .final-section.show .line:nth-child(2) {
@@ -256,7 +258,7 @@ body {
 }
 
 .final-love {
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: clamp(1.3rem, 5vw, 2.1rem);
   font-weight: 600;
   color: #ffffff;

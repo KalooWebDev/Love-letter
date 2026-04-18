@@ -67,6 +67,26 @@ const messages = [
 {
   text: "eu continuo voltando pra você, não importa o quanto eu tente fugir",
   author: "— adaptação — Twenty One Pilots"
+},
+{
+  text: "você é a única coisa que faz o caos dentro de mim fazer sentido",
+  author: "— Another Life — Motionless in White"
+},
+{
+  text: "se eu pudesse voltar no tempo, eu ainda escolheria você",
+  author: "— Another Life — Motionless in White"
+},
+{
+  text: "mesmo no meio da escuridão, eu encontro você",
+  author: "— Eternally Yours — Motionless in White"
+},
+{
+  text: "eu vou te amar até o fim dos tempos",
+  author: "— Eternally Yours — Motionless in White"
+},
+{
+  text: "se existe algo eterno nesse mundo, é o que eu sinto por você",
+  author: "— Eternally Yours — Motionless in White"
 }
 ];
 
@@ -90,7 +110,7 @@ function updateMessage() {
 }
 
 // troca a cada 10s
-setInterval(updateMessage, 10000);
+setInterval(updateMessage, 4200);
 
 // primeira execução
 updateMessage();
