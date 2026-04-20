@@ -58,15 +58,15 @@ const messages = [
 },
 {
   text: "mesmo quando eu duvido de tudo, ainda acredito em nós",
-  author: "— adaptação — Twenty One Pilots"
+  author: "Twenty One Pilots"
 },
 {
   text: "eu não sei como explicar, mas com você tudo faz sentido",
-  author: "— adaptação — Twenty One Pilots"
+  author: "Twenty One Pilots"
 },
 {
   text: "eu continuo voltando pra você, não importa o quanto eu tente fugir",
-  author: "— adaptação — Twenty One Pilots"
+  author: "Twenty One Pilots"
 },
 {
   text: "você é a única coisa que faz o caos dentro de mim fazer sentido",
