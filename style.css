@@ -272,3 +272,138 @@ body {
 .rubi{
   color: #9B111E;
 }
+
+/* ========================= */
+/* 💘 TEMA 12/06 */
+/* ========================= */
+
+body,
+.final-box,
+.message,
+.author,
+.days,
+.time,
+.comp-main,
+.comp-sub,
+.comp-title,
+.rubi {
+  transition:
+    background 1.5s ease,
+    color 1.5s ease,
+    box-shadow 1.5s ease;
+}
+
+/* Fundo */
+body.valentine-theme {
+  background:
+    radial-gradient(
+      circle at top,
+      #24111d 0%,
+      #14070f 50%,
+      #090608 100%
+    );
+}
+
+/* Textos principais */
+body.valentine-theme .days,
+body.valentine-theme .comp-main {
+  color: #ffd1dc;
+}
+
+/* textos secundários */
+body.valentine-theme .time,
+body.valentine-theme .message,
+body.valentine-theme .author,
+body.valentine-theme .comp-sub,
+body.valentine-theme .comp-title {
+  color: #dba0b6;
+}
+
+/* caixa final */
+body.valentine-theme .final-box {
+  background: rgba(255, 180, 210, 0.03);
+
+  box-shadow:
+    0 0 12px rgba(255, 150, 180, 0.05),
+    0 0 4px rgba(255, 150, 180, 0.02);
+}
+
+/* destaque */
+body.valentine-theme .highlight {
+  color: #ffe4ee;
+}
+
+/* Rubi */
+body.valentine-theme .rubi {
+  color: #ff5d8f;
+}
+
+/* ========================= */
+/* 💘 TEMA 12/06 (rosa forte) */
+/* ========================= */
+
+body,
+.final-box,
+.message,
+.author,
+.days,
+.time,
+.comp-main,
+.comp-sub,
+.comp-title,
+.rubi {
+  transition:
+    background 1.5s ease,
+    color 1.5s ease,
+    box-shadow 1.5s ease;
+}
+
+/* Fundo */
+body.valentine-theme {
+  background:
+    radial-gradient(
+      circle at top,
+      #4a001b 0%,
+      #220010 45%,
+      #090608 100%
+    );
+}
+
+/* Texto principal */
+body.valentine-theme .days,
+body.valentine-theme .comp-main {
+  color: #ff6ea8;
+}
+
+/* Textos secundários */
+body.valentine-theme .time,
+body.valentine-theme .message,
+body.valentine-theme .author,
+body.valentine-theme .comp-sub,
+body.valentine-theme .comp-title {
+  color: #ffb0cf;
+}
+
+/* Card */
+body.valentine-theme .final-box {
+  background: rgba(255, 40, 120, 0.03);
+
+  box-shadow:
+    0 0 18px rgba(255, 20, 110, 0.08),
+    0 0 6px rgba(255, 120, 180, 0.03);
+
+  border: 1px solid rgba(255, 90, 160, 0.08);
+}
+
+/* Destaque */
+body.valentine-theme .highlight {
+  color: #ff90bc;
+}
+
+/* Nome Rubi */
+body.valentine-theme .rubi {
+  color: #ff2e72;
+
+  text-shadow:
+    0 0 8px rgba(255, 40, 110, 0.35);
+}
